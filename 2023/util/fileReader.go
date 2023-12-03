@@ -7,7 +7,7 @@ import (
 )
 
 func FileReader(dayNum string, year string) []string {
-	fileName := year + "/input/" + dayNum + ".txt"
+	fileName := year + "/input/day" + dayNum + ".txt"
 	readFile, err := os.Open(fileName)
 	defer readFile.Close()
 
